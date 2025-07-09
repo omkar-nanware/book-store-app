@@ -26,7 +26,7 @@ export const SignUp = () => {
         console.log(res.data);
         if (res.data) {
           toast.success("Singup Success");
-          navigate(from, {replace: true})
+          navigate(from, {replace: true })
         }
         localStorage.setItem("Users",JSON.stringify(res.data.user))
       })
